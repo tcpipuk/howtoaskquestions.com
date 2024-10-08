@@ -10,10 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  deploy:
-    permissions:
-      pages: write
-      id-token: write
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
@@ -28,8 +25,11 @@ jobs:
           name: github-pages
           path: ./
 
-      - name: Upload and Deploy to GitHub Pages
-        id: deployment
+  deploy:
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upload to GitHub Pages
         uses: actions/deploy-pages@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
