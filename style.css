@@ -1,0 +1,114 @@
+/* Base styles */
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1,
+h2 {
+  color: var(--heading-color);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+blockquote {
+  border-left: 4px solid var(--border-color);
+  margin: 1rem 0;
+  padding-left: 1rem;
+  background-color: var(--blockquote-bg);
+}
+
+blockquote .name {
+  font-weight: bold;
+  color: var(--name-color);
+}
+
+blockquote .message {
+  margin: 0.5rem 0;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Dark and light mode variables */
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --heading-color: #111111;
+  --border-color: #cccccc;
+  --blockquote-bg: #f9f9f9;
+  --name-color: #555555;
+  --footer-bg: #f1f1f1;
+  --footer-text: #666666;
+  --link-color: #0066cc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1e1e1e;
+    --text-color: #e0e0e0;
+    --heading-color: #ffffff;
+    --border-color: #444444;
+    --blockquote-bg: #2e2e2e;
+    --name-color: #bbbbbb;
+    --footer-bg: #2c2c2c;
+    --footer-text: #aaaaaa;
+    --link-color: #6699ff;
+  }
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+  main {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
