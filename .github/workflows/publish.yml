@@ -21,6 +21,14 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v2
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: site-artifact
+          path: ./
+
       - name: Upload and Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
