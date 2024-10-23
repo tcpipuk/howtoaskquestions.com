@@ -1,5 +1,7 @@
 ---
 title: "How to Ask Questions"
+date: 2024-01-01T00:00:00Z
+draft: false
 ---
 
 # How to Ask Questions

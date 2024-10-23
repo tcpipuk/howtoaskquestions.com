@@ -7,8 +7,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/static/style.css" />
+    <link rel="icon" href="/static/favicon.png" type="image/png" />
     <meta property="og:title" content="How to Ask Questions" />
     <meta
       property="og:description"
@@ -18,9 +18,10 @@
     <meta property="og:url" content="https://howtoaskquestions.com" />
     <meta
       property="og:image"
-      content="https://howtoaskquestions.com/preview.png"
+      content="https://howtoaskquestions.com/static/preview.png"
     />
-    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale" content="{{ .Site.Language.Lang | replace "-" "_"
+    }}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="How to Ask Questions" />
     <meta
@@ -29,20 +30,29 @@
     />
     <meta
       name="twitter:image"
-      content="https://howtoaskquestions.com/preview.png"
+      content="https://howtoaskquestions.com/static/preview.png"
     />
     <link
       rel="stylesheet"
       type="text/css"
       href="https://fonts.googleapis.com/css?family=Open+Sans"
     />
+    {{ range .Site.Languages }}
+    <link
+      rel="alternate"
+      hreflang="{{ .LanguageCode }}"
+      href="{{ .Lang | relLangURL }}"
+    />
+    {{ end }}
   </head>
   <body>
     <header>
       <h1>{{ .Site.Title }}</h1>
       <nav>
         <ul>
-          <li><a href="/{{ .Lang }}/">Home</a></li>
+          {{ range .Site.Languages }}
+          <li><a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a></li>
+          {{ end }}
         </ul>
       </nav>
     </header>

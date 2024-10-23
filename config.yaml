@@ -4,18 +4,28 @@ title: "How to Ask Questions"
 
 defaultContentLanguage: "en"
 languages:
-  de:
-    languageName: "German"
-    weight: 2
   en:
     languageName: "English"
     weight: 1
+    contentDir: "content/en"
+    languageCode: "en-GB"
+  de:
+    languageName: "German"
+    weight: 2
+    contentDir: "content/de"
+    languageCode: "de-DE"
   es:
     languageName: "Spanish"
     weight: 3
-  fr:
-    languageName: "French"
-    weight: 4
+    contentDir: "content/es"
+    languageCode: "es-ES"
   fi:
     languageName: "Finnish"
+    weight: 4
+    contentDir: "content/fi"
+    languageCode: "fi-FI"
+  fr:
+    languageName: "French"
     weight: 5
+    contentDir: "content/fr"
+    languageCode: "fr-FR"
