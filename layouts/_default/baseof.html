@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ .Title }} - How to Ask Questions</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <meta property="og:title" content="How to Ask Questions" />
+    <meta
+      property="og:description"
+      content="A guide to asking effective questions for fast and accurate responses."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://howtoaskquestions.com" />
+    <meta
+      property="og:image"
+      content="https://howtoaskquestions.com/preview.png"
+    />
+    <meta property="og:locale" content="en_GB" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="How to Ask Questions" />
+    <meta
+      name="twitter:description"
+      content="A guide to asking effective questions for fast and accurate responses."
+    />
+    <meta
+      name="twitter:image"
+      content="https://howtoaskquestions.com/preview.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>{{ .Site.Title }}</h1>
+      <nav>
+        <ul>
+          <li><a href="/{{ .Lang }}/">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>{{ block "main" . }}{{ end }}</main>
+    <footer>
+      <p>
+        Content inspired by
+        <a href="http://catb.org/~esr/faqs/smart-questions.html"
+          >"How To Ask Questions The Smart Way"</a
+        >
+        by Eric S. Raymond and Rick Moen. Stylesheet borrowed from
+        <a href="https://dontasktoask.com/">dontasktoask.com</a>. Site source on
+        <a href="https://github.com/tcpipuk/howtoaskquestions.com">GitHub</a>.
+      </p>
+    </footer>
+  </body>
+</html>

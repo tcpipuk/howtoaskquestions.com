@@ -10,7 +10,8 @@ by Eric S. Raymond and Rick Moen.
 
 ## Deployment
 
-This repository contains static files that are automatically published to GitHub Pages using GitHub
+This repository uses [Hugo](https://gohugo.io/) as a static site generator to build and manage
+the website's content. The site is automatically published to GitHub Pages using GitHub
 Actions. The deployment process is triggered on every push to the `main` branch.
 
 ## Contributing

@@ -1,0 +1,21 @@
+baseURL: "https://howtoaskquestions.com"
+languageCode: "en-GB"
+title: "How to Ask Questions"
+
+defaultContentLanguage: "en"
+languages:
+  de:
+    languageName: "German"
+    weight: 2
+  en:
+    languageName: "English"
+    weight: 1
+  es:
+    languageName: "Spanish"
+    weight: 3
+  fr:
+    languageName: "French"
+    weight: 4
+  fi:
+    languageName: "Finnish"
+    weight: 5
