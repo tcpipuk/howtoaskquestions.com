@@ -1,0 +1,21 @@
+<head>
+  <meta charset="UTF-8" />
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="/style.css" type="text/css" />
+  <link rel="icon" href="/favicon.png" type="image/png" />
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta property="og:description" content="A guide to asking effective questions for fast and accurate responses." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ .Permalink }}" />
+  <meta property="og:image" content="/preview.png" />
+  <meta property="og:locale" content="{{ .Site.Language.Lang | replace "-" "_" }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <meta name="twitter:description" content="A guide to asking effective questions for fast and accurate responses." />
+  <meta name="twitter:image" content="/preview.png" />
+  {{ range .Site.Languages }}
+  <link rel="alternate" hreflang="{{ .LanguageCode }}" href="/{{ .Lang }}/" />
+  {{ end }}
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>

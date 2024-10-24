@@ -1,0 +1,91 @@
+baseURL: "https://howtoaskquestions.com"
+theme: howtoaskquestions
+
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: false
+disableHugoGeneratorInject: false
+
+params:
+  layout: "single"
+  showDrafts: false
+
+languages:
+  de:
+    languageName: "German"
+    contentDir: "content"
+    languageCode: "de-DE"
+    weight: 1
+    title: "Wie man Fragen stellt"
+    flag: "🇩🇪"
+
+  en:
+    languageName: "English"
+    contentDir: "content"
+    languageCode: "en-GB"
+    weight: 2
+    title: "How to Ask Questions"
+    flag: "🇬🇧"
+
+  es:
+    languageName: "Spanish"
+    contentDir: "content"
+    languageCode: "es-ES"
+    weight: 3
+    title: "Cómo hacer preguntas"
+    flag: "🇪🇸"
+
+  fi:
+    languageName: "Finnish"
+    contentDir: "content"
+    languageCode: "fi-FI"
+    weight: 4
+    title: "Kuinka esittää kysymyksiä"
+    flag: "🇫🇮"
+
+  fr:
+    languageName: "French"
+    contentDir: "content"
+    languageCode: "fr-FR"
+    weight: 5
+    title: "Comment poser des questions"
+    flag: "🇫🇷"
+
+  hu:
+    languageName: "Hungarian"
+    contentDir: "content"
+    languageCode: "hu-HU"
+    weight: 6
+    title: "Hogyan Tegyünk Fel Kérdéseket"
+    flag: "🇭🇺"
+
+  ja:
+    languageName: "Japanese"
+    contentDir: "content"
+    languageCode: "ja-JP"
+    weight: 7
+    title: "質問の仕方"
+    flag: "🇯🇵"
+
+  pt:
+    languageName: "Portuguese"
+    contentDir: "content"
+    languageCode: "pt-PT"
+    weight: 8
+    title: "Como Fazer Perguntas"
+    flag: "🇵🇹"
+
+  ru:
+    languageName: "Russian"
+    contentDir: "content"
+    languageCode: "ru-RU"
+    weight: 9
+    title: "Как задавать вопросы"
+    flag: "🇷🇺"
+
+  sw:
+    languageName: "Swahili"
+    contentDir: "content"
+    languageCode: "sw-KE"
+    weight: 10
+    title: "Jinsi ya Kuuliza Maswali"
+    flag: "🇰🇪"
