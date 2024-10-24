@@ -57,7 +57,7 @@ A cortesia encoraja os outros a ajudarem. Use expressões educadas como "por fav
 e reconheça qualquer ajuda que receba.
 
 > **Exemplo:**  
-> "Obrigado pela sua ajuda. Agradeço o tempo que dedicou a me assistir."
+> "Obrigado pela ajuda. Agradeço o tempo que dedicou a assistir-me."
 
 ## Esteja Aberto a Comentários
 
@@ -74,7 +74,7 @@ Informe os outros se as suas sugestões funcionaram. Isto ajuda todos a aprender
 comunidade.
 
 > **Exemplo:**  
-> "A atualização da biblioteca resolveu o problema. Obrigado por me orientar na direção certa!"
+> "A atualização da biblioteca resolveu o problema. Obrigado por o indicar-me na direção certa!"
 
 ## Pratique a Paciência
 
